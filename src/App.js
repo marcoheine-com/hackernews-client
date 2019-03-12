@@ -130,6 +130,7 @@ class App extends Component {
         { error 
           ? <div className="interactions"> 
           <p>We're sorry, something went wrong.</p>
+          <p> We can not find any results at the moment. Please try again later.</p>
           </div>
           :
           <Table
@@ -204,3 +205,9 @@ const Button = ({ onClick, className, children }) =>
   </button>
 
 export default App;
+
+export {
+  Button,
+  Search,
+  Table
+};
